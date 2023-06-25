@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>The Return of Frozen Shadows</title>
+  </head>
+  <body>
+      <!-- game-intro is initially shown on the game start screen -->
+        <img class="logo-img" src="./images/image-logo.png" alt="capa" />
+         <img class="tittle-img" src="./images/generatedtext-fotor-bg-remover-20230624192645.png" alt="titlle"/> 
+         <img class="return-img" src="./images/return.blue.png" alt="return-img"/> 
+      <!-- buttons start screen-->
+        <di class="buttons">
+        <button id="start-button">Start Game</button>
+        <button id="instruction">Instruction</button>
+        <button id="mute">Mute</button>
+        </div>
+      
+      <div id="game-container">
+        <div>
+          <h2>Stats</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lives: <span id="lives">3</span></p>
+        </div>
+        <!-- #game-screen is initially hidden using CSS style display: none -->
+        <div id="game-screen"></div>
+      </div>
+
+           <!-- #game-end is initially hidden using CSS style display: none -->
+      <div id="game-end">
+        <img src="./images/gameover.png" alt="" class="gameover" />
+        <h1>Game Over</h1>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+    </main>
+
+        <div class="canvas-div">
+          <canvas id="canvas" width="1400px" height="600"></canvas>
+        </div>
+
+       
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/obstacle.js"></script>
+    <script type="text/javascript" src="js/gameover.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
