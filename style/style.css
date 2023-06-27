@@ -1,167 +1,212 @@
+/* Estilos padrão para todos os dispositivos */
+
+/* Estilos específicos para dispositivos com largura menor que 600px (exemplo de ponto de quebra) */
+@media (max-width: 600px) {
+  /* Estilos para dispositivos móveis */
+}
+
+/* Estilos específicos para dispositivos com largura maior que 1200px (exemplo de ponto de quebra) */
+@media (min-width: 1200px) {
+  /* Estilos para laptops e dispositivos de tela grande */
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+#game-start {
+  position: relative;
+  height: 100vh;
+}
+#audio-container {
+  display: none;
+}
+
+
+.background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/image-logo1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/image-logo.png);
+  background-position: center;
+  opacity: 100%;
 }
 
-#game-start {
-  padding: 20px 0px;
-  margin-top: 10%;
-  width: 100vw;
-  height: 100vh;
+#button-container {
+  position: absolute;
+  top: 2%; /* Ajuste conforme necessário */
+  left: 15%; /* Ajuste conforme necessário */
+  display: relative;
+  gap: 10px
 }
 
-#game-start p {
-  font-size: 20px;
-  color: #12c2e9;
-}
-
-#game-container {
-  display: flex;
-  width: 100vw;
-  justify-content: flex-start;
-  color: #12c2e9;
-}
-
-#game-container h2 {
-  padding-left: 10px;
-  padding-right: 5px;
-}
-
-#game-container p {
-  padding-left: 10px;
-  padding-top: 15px;
-}
-
-
-#game-screen {
-  display: none;
-  align-content: center;
+#start-button,
+#instructions-button {
   position: relative;
-  background-image: url(../images/muralha.png);
-  background-size: cover;
-  animation: slide 5s linear infinite;
-  width: 100vw;
-  height: 100vh;
-}
-
-@keyframes slide {
-
-  0% {
-      background-position: 1500px 0;
-  }
-
-  95% {
-      background-position: 0 0;
-  }
-
-  100% {
-      background-position: -50px 0;
-  }
-}
-
-#game-over {
-  display: none;
-}
-
-#game-over h1 {
-  color: #12c2e9;
-
-}
-
-#start-button {
-  position:relative;
-  width: 160px;
+  top: 0;
+  left: 0;
+  width: 140px;
   height: 40px;
-  line-height: 0px;
-  top: 75%;
-  left: 00%;
-  display: inline-block;
-  text-align:center;
-  color: #053861;
+  line-height: 40px;
   font-size: 20px;
   background-color: black;
-  padding: 20px 20px;
-  border: 2px solid;
-  box-shadow: 0;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-}
-
-
-#instruction{
-  position:relative;
-  width: 160px;
-  height: 40px;
-  line-height: 0px;
-  top: 56%;
-  left: -7%;
-  display: inline-block;
-  text-align:center;
   color: #053861;
-  font-size: 20px;
-  background-color: black;
-  padding: 20px 20px;
   border: 2px solid;
-  box-shadow: 0;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  border-radius: 10px;
 }
 
-
-#mute{
-position:relative;
-  width: 160px;
-  height: 40px;
-  line-height: 0px;
-  top:56%;
-  left: 7%;
-  display: inline-block;
-  text-align:center;
-  color: #053861;
-  font-size: 20px;
-  background-color: black;
-  padding: 20px 20px;
-  border: 2px solid;
-  box-shadow: 0;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-}
-
-#start-button {
-  margin-top: 8%;
-  margin-bottom: 1%;
-}
 
 #start-button:hover {
+  box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
+  border: 3px solid #18adf1;
+  color: #053861;
+}
+
+#instructions-button:hover {
   box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
   border: 3px solid #18adf1;
   color: #18adf1;
 }
 
-  #instruction:hover {
-    box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
-    border: 3px solid #18adf1;
-    color: #18adf1;
+#instructions {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+
+.instructions-content {
+   position: relative;
+  top: calc(100% + 10px);
+  left: 60%;
+  transform: translateX(-50%);
+  background-color: #879196;
+  padding: 20px;
+  border: 2px solid;
+  box-shadow: 0;
+  border-radius: 8px;
+  text-align: center;
+  color: #0e1011;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility:hidden;
+  pointer-events: none;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
 }
 
-#mute:hover {
+.jon {
+    max-width: 30%; /* Ajuste o tamanho máximo da imagem conforme necessário */
+    height: auto; /* Manter a proporção da imagem */
+  }
+  
+
+#game-screen {
+  display: none;
+  align-content: center;
+  position: absolute;
+  background-image: url(../images/muralha.jpg);
+  background-size: cover;
+  animation: slide 5s linear infinite;
+  overflow:hidden;
+  padding: 20px 0;
+   background-position: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+ }
+
+ #score, #lives {
+  color: black;
+}
+
+@keyframes slide {
+0% {
+  background-position: 1500px 0;
+}
+95% {
+  background-position: 0 0;
+}
+100% {
+  background-position: -50px 0;
+}
+}
+
+
+#game-over {
+  display: none;
+  top: 50%;
+  left: 5%;
+  text-align: center;
+}
+
+.game-over-foto {
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width:50%;
+  height: 80%;
+  position: absolute;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  }
+  
+#restart-button {
+  line-height: 40px;
+  font-size: 20px;
+  background-color: black;
+  color: #053861;
+  border: 2px solid;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#restart-button:hover {
+  box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
+  border: 3px solid #18adf1;
+  color: #18adf1;
+}
+
+
+
+.winterfell {
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width:50%;
+  height: 80%;
+  position: absolute;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  }
+  
+#restart-button2 {
+  line-height: 40px;
+  font-size: 20px;
+  background-color: black;
+  color: #053861;
+  border: 2px solid;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#restart-button2:hover {
   box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
   border: 3px solid #18adf1;
   color: #18adf1;

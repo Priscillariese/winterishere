@@ -11,39 +11,53 @@
 
 <body>
     <main>
+      <audio id="background-music" src="./audio/Game-Of-Thrones.mp3" autoplay loop></audio>
         <!-- #game-start is initially shown on the game start screen -->
         <div id="game-start">
-            <!-- <img src="./images/image-logo.png" alt="logo-img" class="logo-img" /> -->
-            <br />
+          <div class="background-image"></div>
+          <div id="button-container">
+            <button id="instructions-button">Instructions</button>
             <button id="start-button">Start Game</button>
-            <p>Use the arrows to control the dragon!</p>
-            <button id="instruction">Instruction</button>
-            <button id="mute">Mute</button>
-
+          </div>
+          <div id="instructions">
+            <div class="instructions-content">
+              <h2><strong>Instructions of the Game</strong></h2>
+              <img src="./images/jon-snow.png" alt="jon" class="jon">
+              <p><strong> Help to defeat the Frozen Shadows and light the flame of victory in Winterfell!.</p>
+              <p>Use the arrows to move the Hero.</strong></p>
+            </div>
+          </div>
         </div>
+        
+          
+          
 
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen">
-            <div id="game-container">
-                <h2>Stats: </h2>
                 <p>Score: <span id="score">0</span></p>
                 <p>Lives: <span id="lives">3</span></p>
-            </div>
+    
         </div>
 
+        <div id="game-win" style="display: none;">
+          <!-- Conteúdo da tela de vitória -->
+          <img src="Images/winterfell.png" class="winterfell" />
+          <br />
+          <p class="final">Final Score: <span id="final-score-win"></span></p> <!-- Elemento para exibir a pontuação final -->
+          <button id="restart-button2">Restart</button>
+      </div>
 
+        
         <!-- #game-over CSS style display: none -->
         <div id="game-over">
-            <img src="./images/image-logo.png" alt="logo-img" class="logo-img" />
-            <h1>Game Over</h1>
-            <br />
+            <img src="./images/gameover.png" alt="game-over" class="game-over-foto" />
             <button id="restart-button">Restart</button>
         </div>
     </main>
-    <script type="text/javascript" src="js/game.js"></script>>
+
     <script type="text/javascript" src="js/player.js"></script>>
-    <script type="text/javascript" src="js/obstacle.js"></script> 
+    <script type="text/javascript" src="js/game.js"></script>>
+    <script type="text/javascript" src="js/obstacle.js"></script> >
     <script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>
