@@ -33,11 +33,11 @@ body {
 .background-image {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left:50%;
   width: 80%;
-  height: 80%;
+  height: 75%;
   transform: translate(-50%, -50%);
-  background-image: url(../images/image-logo1.png);
+  background-image: url(../images/SEM\ CEREBRO-NOVO.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
