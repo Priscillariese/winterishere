@@ -2,7 +2,7 @@ class Player {
 
     constructor(gameScreen) {
         this.gameScreen = gameScreen
-        this.with = 150
+        this.withdh = 150
         this.height = 120
         this.top = 300
         this.left = 50
