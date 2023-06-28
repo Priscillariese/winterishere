@@ -10,7 +10,7 @@ class Player {
         this.directionY = 0
         this.element = document.createElement('img')
   
-        this.element.src = './images/cerebro.jpeg'
+        this.element.src = './images/snow.png'
         this.element.style.position = 'absolute'
   
         this.element.style.width = `${this.width}px`
