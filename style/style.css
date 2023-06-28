@@ -34,10 +34,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 80%;
   height: 80%;
   transform: translate(-50%, -50%);
-  background-image: url(../images/image-logo1.png);
+  background-image: url(../images/Design\ sem\ nome.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -47,7 +47,7 @@ body {
 #button-container {
   position: absolute;
   top: 2%; /* Ajuste conforme necessário */
-  left: 15%; /* Ajuste conforme necessário */
+  left: 12%; /* Ajuste conforme necessário */
   display: relative;
   gap: 10px
 }
@@ -62,22 +62,22 @@ body {
   line-height: 40px;
   font-size: 20px;
   background-color: black;
-  color: #053861;
+  color: #4384b9;
   border: 2px solid;
   border-radius: 10px;
 }
 
 
 #start-button:hover {
-  box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
+  box-shadow: 0 0 10px 0 #d6dde0 inset, 0 0 20px 2px #18adf1;
   border: 3px solid #18adf1;
-  color: #053861;
+  color: #c4d0da;
 }
 
 #instructions-button:hover {
-  box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
+  box-shadow: 0 0 10px 0 #d6dde0 inset, 0 0 20px 2px #18adf1;
   border: 3px solid #18adf1;
-  color: #18adf1;
+  color: #c4d0da;
 }
 
 #instructions {
@@ -168,7 +168,7 @@ body {
   line-height: 40px;
   font-size: 20px;
   background-color: black;
-  color: #053861;
+  color: #4384b9;
   border: 2px solid;
   border-radius: 8px;
   text-decoration: none;
@@ -176,12 +176,10 @@ body {
 }
 
 #restart-button:hover {
-  box-shadow: 0 0 10px 0 #18adf1 inset, 0 0 20px 2px #18adf1;
+  box-shadow: 0 0 10px 0 #d6dde0 inset, 0 0 20px 2px #18adf1;
   border: 3px solid #18adf1;
-  color: #18adf1;
+  color: #c4d0da;
 }
-
-
 
 .winterfell {
   justify-content: center;
