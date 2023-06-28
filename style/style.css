@@ -125,11 +125,33 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  font-size: 20px;
  }
 
- #score, #lives {
-  color: black;
+.palavras {
+  position: relative;
+  top: 2%;
+  left: 2%;
+  width: 90px;
+  height: 95px;
+  line-height:40px;
+  font-size: 20px;
+  background-color: black;
+  color: #4384b9;
+  border: 2px solid;
+  border-radius: 10px;
+
+}
+
+#score:hover {
+  box-shadow: 0 0 50px 0 #d6dde0 inset, 0 0 20px 2px #18adf1;
+  border: 3px solid #18adf1;
+  color: #c4d0da;
+}
+
+#lives:hover {
+  box-shadow: 0 0 10px 0 #d6dde0 inset, 0 0 20px 2px #18adf1;
+  border: 3px solid #18adf1;
+  color: #c4d0da;
 }
 
 @keyframes slide {
@@ -143,7 +165,6 @@ body {
   background-position: -50px 0;
 }
 }
-
 
 #game-over {
   display: none;
