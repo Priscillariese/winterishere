@@ -1,7 +1,7 @@
 # THE RETURN OF FROZEN SHADOWS
 
 ## Description
-- In "The Return of Frozen Shadows", an interactive and fun game, you assume the role of Snow and need to develop skills to avoid being caught by the Frozen Shadows, the enemies. Can you step out of the shadows and save Winterfell? Embark now on this icy adventure and test your skills! Be prepared for exciting challenges and surprises along the way.
+- In "The Return of Frozen Shadows", an interactive and fun game, you assume the role of The Hero and need to develop skills to avoid being defeated by the Frozen Shadows, the enemies. Can you step out of the shadows and save Winterfell? Embark now on this icy adventure and test your skills! Be prepared for exciting challenges and surprises along the way.
 
 
 ## MVP (DOM) 
@@ -61,5 +61,6 @@
 ## ADITIONAL LINKS
 **Link page**
 - https://priscillariese.github.io/winterishere/
+
 **Slides**
-- https://docs.google.com/presentation/d/1cDW3pKyFj_i57K-YUD7MhHrUeQeWV6TAUk5T4GaEVa8/edit?usp=sharing
+- https://docs.google.com/presentation/d/1cDW3pKyFj_i57K-YUD7MhHrUeQeWV6TAUk5T4GaEVa8/edit?usp=sharinggit o
